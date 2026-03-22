@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    /* This creates the continuous line across the top */
+    border-bottom: 1px solid #b6b1b1;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.myntra_home {
+    height: 45px;
+}
+
+.logo_container {
+    margin-left: 4%;
+}
+
+/* Nav Bar Fixes */
+.nav_bar {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+    height: 80px; /* Match header height */
+}
+
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex; /* Added to center text vertically */
+    align-items: center; /* Added to center text vertically */
+    padding: 0 15px; /* Changed from 28px 0 */
+    white-space: nowrap;
+    
+    /* RESERVES THE SPACE so the line doesn't break */
+    border-bottom: 4px solid transparent; 
+    transition: border-color 0.2s;
+}
+
+.nav_bar a:hover {
+    /* Changes color without changing the size/width of the border */
+    border-bottom: 4px solid #f54e77;
+}
+
+.nav_bar a sup {
+    color: #ff3f6c;
+    font-size: 10px;
+}
+
+/* Search Bar Styling */
+.search_bar {
+    height: 40px;
+    min-width: 200px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f6;
+    border-radius: 4px;
+}
+
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+}
+
+.search_input {
+    background-color: transparent;
+    color: #696e79;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Action Bar Styling */
+.action_bar {
+    display: flex;
+    min-width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 4%;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* THIS IS THE ANCHOR */
+    text-decoration: none;
+    color: #282c3f;
+}
+
+.action_icon {
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.action_name {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.action_container:hover {
+    color: #f54e77;
+}
+
+/* Main Section */
+.banner_container {
+    margin: 40px 0;
+}
+
+.banner_image {
+    width: 100%;
+}
+
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category_items, .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sale_item {
+    width: 250px;
+}
+
+/* Footer Section */
+.footer_container {
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.footer_divider {
+    border: none;
+    border-top: 1px solid #eaeaec;
+    width: 100%;
+    margin: 0;
+}
+
+.copyright {
+    color: #94969f;
+    text-align: center;
+    padding: 15px;
+}
+
+#new-sup {
+    font-size: 10px;           /* Small but readable */
+    color: #ff3f6c;           /* Myntra Pink */
+    font-weight: 700;         /* Make it bold like the logo */
+    text-transform: uppercase;
+    margin-left: 2px;         /* Give it a tiny bit of breathing room */
+    vertical-align: super;    /* Ensures it stays in superscript position */
+    line-height: 0;
+    position: relative;
+    top: -5px;
+}
+
+.items-container {
+    width : 80%;
+    margin : 40px  10%;
+
+
+}
+
+.item-container{
+    width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.item-image{
+    width: 100%;
+
+
+}
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.company{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.item-name{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+
+}
+
+
+
+.current-price{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+
+}
+
+.original-price{
+        text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+
+.discount-price{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+
+}
+
+.btn-add-bag {
+    display: flex;             /* The Magic Fix */
+    align-items: center;       /* Vertical centering */
+    justify-content: center;   /* Horizontal centering */
+    gap: 8px;                  /* Adds space between the bag icon and text */
+    
+    border-radius: 4px;        /* Changed from 2% to 4px for a cleaner look */
+    padding: 12px 15px;
+    min-width: 108px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #ff3e6c;
+    border: 1px solid #ff3e6c;
+    color: #fff;
+    flex: 3;
+    width: 100%;
+    margin-right: 3%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bag-item-count {
+    background-color: #ff3f6c;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: -10px;   /* Adjusted to look better on the icon */
+    right: -10px;    /* Adjusted to align with the icon edge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; /* Prevents text from pushing the circle boundaries */
+}
+
+.badge-hidden {
+    display: none !important; /* !important ensures it overrides flex */
+}
